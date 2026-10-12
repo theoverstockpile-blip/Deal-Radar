@@ -1,0 +1,9 @@
+flask>=3.0
+gunicorn>=22            # production web server (used by the Procfile on deploy)
+cryptography>=42
+pywebpush>=2.0          # push delivery (not needed for tests)
+google-api-python-client>=2.100   # only for DEALRADAR_SOURCE=gmail
+google-auth-oauthlib>=1.2         # only for DEALRADAR_SOURCE=gmail
+pytest>=8
+pillow                  # only to regenerate icons
+playwright              # only for UI checks

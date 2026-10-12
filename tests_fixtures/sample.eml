@@ -1,0 +1,3162 @@
+Delivered-To: theoverstockpile@gmail.com
+Received: by 2002:ab0:2390:0:b0:980:6c68:e8c2 with SMTP id b16csp4135477uan;
+        Mon, 14 Sep 2026 11:19:13 -0700 (PDT)
+X-Received: by 2002:a53:ac93:0:b0:671:2228:1240 with SMTP id 956f58d0204a3-6714e1a22c8mr1029172d50.90.1789409953252;
+        Mon, 14 Sep 2026 11:19:13 -0700 (PDT)
+ARC-Seal: i=2; a=rsa-sha256; t=1789409953; cv=pass;
+        d=google.com; s=arc-20260327;
+        b=YJR3ALxC+n0VoHm8ljAA4dwcBjg1QfWVcE5PO2Qu1s1ctnCMguKAAN/sC5CVWP81f4
+         PiKvd+SjAxM5xcgbRHek7x0D1k5lZodCZWy8GTf/h5OepXy1YlupanUkb/H3PviioF8I
+         HK09tTb5mmb+Wwf6D9qc4XCOSS9HD5ZW5IarEuj5/tkeGcJhQWRTqrXfAAXIEFHNhwxi
+         OZobmvshrT8dfXMW7v9loQm/ghAjQWXzZ3skzVajy7qsmSzXP4Frb36j4mQWR3kxRfIa
+         SwRjswBlVRx95Gl9p/+AQvAdQ0Qw9BIoHJWUln9nEU4wl3uokis+UWq6UMuVHRc/byLL
+         nrrw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=3iVKoNCzHiv0N2thSFSATDp3SgtXdZxw0F0CEgEbpoc=;
+        fh=88+2NvdOuUdadD2kQy3ikCx7+aiMCqragEa81stV5Pk=;
+        b=MbKtmZcNttZ9d9pZ1SKLBNqkkQPrfnGO/XKseqnxGC1OaOZp4WrWTzpi/x4qGiNpMs
+         2bwYpfHtnNdOWvtuDMcguNjyMtIE54lsOs0nOmHmSBCNwmKB4+9g5ZbNtcguS5KQD+IY
+         8O5f/2YtKLm7RHYO7GW27NVf5/lXYEEFNS2GjU3IDmHOu37b7rCl+JFkz9Sxa8uOIbGy
+         Z5Uq4qI6mbtYLYp/kZio1Xh5D+B2KEnermadwMSaxGN9DrRVHTQZBBwj9SMM8iOcQuAY
+         pCQqo731yHSFpQTKS6WLRuQsk9ZbrXoQCe4BhMl+6KtpjNSgdY5BHwwD7LHUQCyTlkn4
+         UiFw==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=gd5mCCVF;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of aitkeninvestments@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=aitkeninvestments@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+Return-Path: <aitkeninvestments@gmail.com>
+Received: from mail-sor-f41.google.com (mail-sor-f41.google.com. [209.85.220.41])
+        by mx.google.com with SMTPS id 956f58d0204a3-67125d7caeasor3919496d50.3.2026.09.14.11.19.13
+        for <theoverstockpile@gmail.com>
+        (Google Transport Security);
+        Mon, 14 Sep 2026 11:19:13 -0700 (PDT)
+Received-SPF: pass (google.com: domain of aitkeninvestments@gmail.com designates 209.85.220.41 as permitted sender) client-ip=209.85.220.41;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@gmail.com header.s=20251104 header.b=gd5mCCVF;
+       arc=pass (i=1);
+       spf=pass (google.com: domain of aitkeninvestments@gmail.com designates 209.85.220.41 as permitted sender) smtp.mailfrom=aitkeninvestments@gmail.com;
+       dmarc=pass (p=NONE sp=QUARANTINE dis=NONE) header.from=gmail.com;
+       dara=pass header.i=@gmail.com
+ARC-Seal: i=1; a=rsa-sha256; t=1789409953; cv=none;
+        d=google.com; s=arc-20260327;
+        b=gUHU2X8VEcQEnwlYBbaEYO41P4x304AzE8w6BBP6Xs3FlURCbJw6PKdf/Zpm/BED4l
+         trEmeU1e6MW9CcZ+PfNm1IgGYVhBXc0wxO/ZJlD4DXYtg7AOSSzZ+TgLmK1tQzt+NuJw
+         qkFBPRh7lrkn95eN9PW9lL1op/38KNTDb5RFka2mePbx/PsyJUAJ13UeNP8JcUEyi/s8
+         +dJxaKx7DViTqvP9i9qQGnwfFQld+ukDCzp4ypsNBBC1bZ9S+bSag7rdc3IZorKfhS6e
+         dvXpJl+I/jGQWMExJTqXpBH8AVLDw6gHj4i9+NUmY1tCGFca0JhHX13cJHMO7/aH92Br
+         zNoA==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20260327;
+        h=to:subject:message-id:date:from:in-reply-to:references:mime-version
+         :dkim-signature;
+        bh=3iVKoNCzHiv0N2thSFSATDp3SgtXdZxw0F0CEgEbpoc=;
+        fh=88+2NvdOuUdadD2kQy3ikCx7+aiMCqragEa81stV5Pk=;
+        b=PBsQh/fkauXns2HIn+UZEjpV/lQR9QbBpXM8whqPWUk8AtTOtyXEmht5yWHPbKRk2z
+         a8/v3o4wPChRAQZzo849fVQS1fp6cJN3RQguDwPg3vzF+qYQb8evz8A7tVP0FhBu3SZr
+         RWOJUDPSpjmSjfDX1MMrwV2/gimqpUXXHnyclhBCBG6Up+uliYS+XVzJOf3WKIXzTybl
+         4WO3vs8G1c22GysTEjqO//Qo0424hNM3F9INmrB8MyDzwmyS63tQUl38eoVtt8u+ajtO
+         SonAIzmjO51Q6yWTFNCm+1+koNZNxcELrbbczcAMilS+AWiWsg+cGuAhCkyLPHG2KIZJ
+         azfA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20251104; t=1789409953; x=1790014753; dara=google.com;
+        h=content-type:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:from:to:cc:subject:date:message-id:reply-to
+         :content-type;
+        bh=3iVKoNCzHiv0N2thSFSATDp3SgtXdZxw0F0CEgEbpoc=;
+        b=gd5mCCVFzdShkDjulqltRV5GghpLCOoxPkDwZLMBGv6pgROEIiSSRaYY8wW8DufD/k
+         6T8dU5SrPlHEDBVbEoWOOVGlCRkkGPdHzyE9iFBq56xUCyrZFAWmbMs9KuRFAoXBT7Px
+         IG3ayBc8MwSPOILLFqGjy5UeoSQM8OEunl9BKmP6me1mI5rYWmqJL42bq8DJt2qQ5Lfy
+         jKBQfgrmPO1NMKT1q+1tag1OkpP/ke3ULKf4KPcvvh7V6VqsCKQAmZYO7um6WtZjxkj0
+         eaof9h6KQVO0SHRvmHfgRrW/ItKcwvSli8dY1z1hyv33RZ8jAjP30+aao2jYpi3Gv0+j
+         j7tA==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20251104; t=1789409953; x=1790014753;
+        h=content-type:to:subject:message-id:date:from:in-reply-to:references
+         :mime-version:x-gm-gg:x-gm-message-state:from:to:cc:subject:date
+         :message-id:reply-to:content-type;
+        bh=3iVKoNCzHiv0N2thSFSATDp3SgtXdZxw0F0CEgEbpoc=;
+        b=jsqtGHW/J3kUBG1zfWldJlF0EUL8lNLMirX3cw9z3Omew2Il1RQAZurETxMPOnI/OD
+         nzuLJbTeb32GiScb2ijd80XudPd6CY9Cdb+4cI7dsGJraFFgNTyKhJ3Gd/oj/UiYDpCu
+         SRczkFEtVc+BMvIGelcora74X0vsk7BxQ7s+EX/ihInJRCRAySX65SrXrG6RueOskJvA
+         1KsYNjY6gj9b+0OY9GDfnK2/5SefwlHlrlyFF2gaPmDVkNyADnOHUIXsndsSTQcGA5t8
+         pxvNTs97is19ICGY+DnMb66ruUfp4nMMrtWetAdaxMwrN4/BhYY8OlNV/qnRpRmu7RDk
+         yr2Q==
+X-Gm-Message-State: AFuF++l3+nmD8cEi2n8DXS2sy4psxq4JhQGB7oeSzccRp9ip5b9PbusZ
+	uFYYe9LYcw4nkf6Dy3RKVVCnXpyvjTqiHg+Lq6XUGe51t0mXt4i38hyuOW4gRtYXhqVaJk7GkVg
+	RP/c1apruD+xwuUSBRgz7s/fHNBQV7AfO4g==
+X-Gm-Gg: AYBFou3qg7ejra7YeF9tRz09JKIxSOPbo3gRWL+sshN82TR3IJtgO/stgHECWgMFFmI
+	FyTVawzU9W4MTZFkRc6PDceVTYplHW45qRp986VNvpgm1hxG7AZvfX5TCS1CWesiCETdIUEQUbw
+	zlN1bay5cxjvwILm93PuZ6ZlboaU3kSdigeCJ5NoeDXzvaNn1279y1xTgt1eE69oPt2k9HMzViO
+	RA9LA6mphqDWFbT2PRaXEsWVwztYZ0qdk5g7SGT+bnVggJhe8Lf9MPJ8k08NwhuLzPETiCAQTr4
+	6KljrFEskre9hqhUiT4haVgCT6M3M9ChJAhXowVX7BdGZptRecZT+UxjiMq6JzpdSeB4ifkLDFD
+	8nu/BreSdA5hx3lUfctJKQiZu
+X-Received: by 2002:a05:690e:1186:b0:66c:e25c:f7ae with SMTP id
+ 956f58d0204a3-6714dff5e09mr974440d50.40.1789409951685; Mon, 14 Sep 2026
+ 11:19:11 -0700 (PDT)
+MIME-Version: 1.0
+References: <cae766a676ce8580d3f4d2a6a.8f3e444893.20260914181425.caa779f282.b98836e1@mail37.use2001.mcdlv.net>
+In-Reply-To: <cae766a676ce8580d3f4d2a6a.8f3e444893.20260914181425.caa779f282.b98836e1@mail37.use2001.mcdlv.net>
+From: Aitken Investments <aitkeninvestments@gmail.com>
+Date: Mon, 14 Sep 2026 11:18:59 -0700
+X-Gm-Features: AcwNN1USLzAX_N9BUJ8JcwIUnORfVRUmOCbgTUldKlwdwGiMxIWFE8d7Z1NAD0E
+Message-ID: <CABiDMzrbmwP1MS2LC_StcKvoXUtp-D-25oRhFTfOM0KCMhxhOQ@mail.gmail.com>
+Subject: Fwd: Morning Wholesale Updates !!!
+To: theoverstockpile@gmail.com
+Content-Type: multipart/alternative; boundary="000000000000872129065b7578d8"
+
+--000000000000872129065b7578d8
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+Wholesale Opportunity
+
+Text Spencer 480-283-4425
+View this email in your browser
+<https://us.list-manage.com/14BQRJJyXF1?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+421 Hinton St, Eloy, AZ 85716
+<https://www.google.com/maps/search/421+Hinton+St,+Eloy,+AZ+85716?entry=3Dg=
+mail&source=3Dg>
+APN: 411-09-0560
+
+PICTURES
+<https://us.list-manage.com/7N9IoPjCY6q?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $19,000
+
+Lot Size: 0.15 Acres
+Property Type: Vacant Land
+7836 E Sugarloaf St, Kingman, AZ 86401
+<https://www.google.com/maps/search/7836+E+Sugarloaf+St,+Kingman,+AZ+86401?=
+entry=3Dgmail&source=3Dg>
+Parcel #: 313-49-254
+
+Price: $23,990
+ARV: $250,000
+
+Lot Size: 13,068 Sq Ft (0.30 Acres)
+Property Type: Vacant Land
+
+Utilities: Available at Lot Line
+635 E Mohave Cir, Eloy, AZ 85131
+<https://www.google.com/maps/search/635+E+Mohave+Cir,+Eloy,+AZ+85131?entry=
+=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/vaSlru6cfrH?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $45,000
+ARV: $100,000
+
+Property Type: Affixed Manufactured Home with Land
+Land: Included
+Condition: Sold AS-IS
+114 S McNab Pkwy, San Manuel, AZ 85631
+<https://www.google.com/maps/search/114+S+McNab+Pkwy,+San+Manuel,+AZ+85631?=
+entry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/J1MBRnj3xLL?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $74,900
+
+Beds: 4
+Baths: 1
+Sq Ft: 1,080
+Lot Size: 8,277 Sq Ft
+Year Built: 1954
+
+Roof: Needs Replacement
+AC: Needs Replacement
+
+Vacant
+Access: Contact for Access
+COE: 09/28/2026
+33042 N 225th Ave, Wittmann, AZ 85361
+<https://www.google.com/maps/search/33042+N+225th+Ave,+Wittmann,+AZ+85361?e=
+ntry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/baw3Qgw7Kq7?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $120,000
+
+Beds: 2
+Baths: 2
+Sq Ft: 924
+Lot Size: 6,000 Sq Ft
+Year Built: 2005
+
+HOA: No
+Water: Public
+Sewer: Septic
+
+Vacant at Close
+14421 W Desert Owl Way, Marana, AZ 85653
+<https://www.google.com/maps/search/14421+W+Desert+Owl+Way,+Marana,+AZ+8565=
+3?entry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/17XaShSsrLE?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $130,000
+
+Beds: 2
+Baths: 2
+Sq Ft: 1,300
+Lot Size: 4.40 Acres / 191,664 Sq Ft
+Year Built: 1980
+
+Water: Well
+Sewer: Septic; may need repair/replacement
+Affixture: All paperwork at title to be affixed
+
+EMD: $5,000 Nonrefundable
+1218 S 13th Ave, Phoenix, AZ 85007
+<https://www.google.com/maps/search/1218+S+13th+Ave,+Phoenix,+AZ+85007?entr=
+y=3Dgmail&source=3Dg>
+APN: 105-02-099A
+
+Price: $147,500
+
+Zoning: R3
+Lot Size: ~9,853 Sq Ft
+Lot Dimensions: 75' =C3=97 131.39'
+Property Type: Vacant Land
+
+Utilities: Stubbed at Lot Line
+Best Use: Triplex Development
+15448 W Port Royale Ln, Surprise, AZ 85379
+<https://www.google.com/maps/search/15448+W+Port+Royale+Ln,+Surprise,+AZ+85=
+379?entry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/tFAiMe1PTzI?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $172,500
+
+Beds: 3
+Baths: 3
+Sq Ft: 1,615
+Lot Size: 5,624 Sq Ft
+Year Built: 2001
+Garage: 2-Car
+HOA: $171/Quarter
+
+Condition: Fire-damaged home; first level appears to be in good condition.
+Property needs updating to reach its full potential.
+11116 W Montana Ave, Youngtown, AZ 85363
+<https://www.google.com/maps/search/11116+W+Montana+Ave,+Youngtown,+AZ+8536=
+3?entry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/S3ayjD4qEeE?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $195,000
+
+Beds: 2
+Baths: 1
+Sq Ft: 1,685
+
+ADU Potential: Yes =E2=80=93 Backyard Structure Needs Plumbing
+
+EMD: $5,000
+COE: 30 Days
+1109 N 27th Dr, Phoenix, AZ 85009
+<https://www.google.com/maps/search/1109+N+27th+Dr,+Phoenix,+AZ+85009?entry=
+=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/_55bPJ3nUvc?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $229,900
+ARV: $330,000+
+
+Beds: 3
+Baths: 1
+Sq Ft: 1,278
+Lot Size: 6,630 Sq Ft
+Year Built: 1954
+Carport: 1-Car
+HOA: No
+
+Vacant
+Access: Text for Access
+3620 W Missouri Ave, Phoenix, AZ 85019
+<https://www.google.com/maps/search/3620+W+Missouri+Ave,+Phoenix,+AZ+85019?=
+entry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/Hulladmw6vr?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $235,000
+ARV: $375,000+
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,452
+Lot Size: 6,521 Sq Ft
+Year Built: 1958
+HOA: No
+
+Vacant
+Access: Text for Access
+35122 N Happy Jack Dr, San Tan Valley, AZ 85143
+<https://us.list-manage.com/19Ubp4d0UBe?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+APN: 509-03-543
+
+PICTURES
+<https://us.list-manage.com/G9A5t4ZqUO_?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $252,900
+
+Beds: 2
+Baths: 2
+Sq Ft: 1,311
+Year Built: 2005
+Property Type: Single Family Home
+
+New AC
+City Water
+City Sewer
+HOA: $85/Month
+
+Vacant at COE
+7038 W Karen Lee Ln, Peoria, AZ 85382
+<https://www.google.com/maps/search/7038+W+Karen+Lee+Ln,+Peoria,+AZ+85382?e=
+ntry=3Dgmail&source=3Dg>
+APN: 200-52-811
+
+PICTURES
+<https://us.list-manage.com/uRIKwUtNDKN?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $270,000
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,874
+Lot Size: 0.253 Acres (11,034 Sq Ft)
+Year Built: 1980
+Property Type: Manufactured Home
+
+Pool: Private
+Roof: New in 2025
+HVAC: New in 2025
+Solar: Lease
+Water: Public
+Power: Public
+Sewer: Septic
+1506 E Stirrup Ln, San Tan Valley, AZ 85143
+<https://www.google.com/maps/search/1506+E+Stirrup+Ln,+San+Tan+Valley,+AZ+8=
+5143?entry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/5mZa74gAF43?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $275,000
+
+Beds: 4
+Baths: 2
+Sq Ft: 1,801
+Lot Size: 5,227 Sq Ft
+Year Built: 2006
+Garage: 2-Car
+2242 W Hayden Peak Dr, San Tan Valley, AZ 85143
+<https://www.google.com/maps/search/2242+W+Hayden+Peak+Dr,+San+Tan+Valley,+=
+AZ+85143?entry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/4efcK0KoPLP?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $290,000
+
+Beds: 4
+Baths: 2
+Sq Ft: 1,520
+Lot Size: 10,018 Sq Ft
+Year Built: 2002
+Garage: 2-Car
+
+Lease in Place
+Lease Expires: 12/02/2026
+24939 W Durango St, Buckeye, AZ 85326
+<https://www.google.com/maps/search/24939+W+Durango+St,+Buckeye,+AZ+85326?e=
+ntry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/179iuzGAbEb?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $319,990
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,361
+Lot Size: 41,818 Sq Ft
+Year Built: 1971
+Property Type: Manufactured Home
+2929 E Eberle Ln, Phoenix, AZ 85032
+<https://us.list-manage.com/FFfnv73JKec?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/WxlbJiOc3A0?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $319,999
+ARV: $500,000+
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,670
+Lot Size: 9,931 Sq Ft
+Year Built: 1971
+
+Zoning: Multi-Family (R-3)
+HOA: None
+
+COE: 09/23/2026
+Vacant
+Access: Text for Access
+1207 E Desert Cove Ave, Phoenix, AZ 85020
+<https://www.google.com/maps/search/1207+E+Desert+Cove+Ave,+Phoenix,+AZ+850=
+20?entry=3Dgmail&source=3Dg>
+
+Price: $320,000
+ARV: $450,000
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,421
+Lot Size: 6,000 Sq Ft
+
+Carport: Yes
+RV Gate: Yes
+Mountain Views: Yes
+Condition: Clean House
+1540 S Carpenter Ln, Cottonwood, AZ 86326
+<https://www.google.com/maps/search/1540+S+Carpenter+Ln,+Cottonwood,+AZ+863=
+26?entry=3Dgmail&source=3Dg>
+APN: 406-48-305
+
+PICTURES
+<https://us.list-manage.com/O7ksTYO3YDa?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $359,000
+
+Beds: 2 + Den
+Baths: 2
+Sq Ft: 1,639
+Lot Size: 0.55 Acres (23,963 Sq Ft)
+Year Built: 2004
+Property Type: SFR
+
+Water: Public
+Power: Public
+Sewer: Septic
+Solar: Tesla =E2=80=93 $128/Month
+4751 E Hopi Cir, Mesa, AZ 85206
+<https://www.google.com/maps/search/4751+E+Hopi+Cir,+Mesa,+AZ+85206?entry=
+=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/14OPiZqc06W?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $359,900
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,847
+Lot Size: 6,838 Sq Ft
+Year Built: 1996
+Garage: 2-Car
+Property Type: Single Family
+
+Condition: Mostly original; needs updating to reach maximum value
+
+EMD: $5,000
+COE: 10/02/2026
+199
+<https://www.google.com/maps/search/199++185+E+Morelos+St,+Chandler,+AZ+852=
+25?entry=3Dgmail&source=3Dg>&
+185 E Morelos St, Chandler, AZ 85225
+<https://www.google.com/maps/search/199++185+E+Morelos+St,+Chandler,+AZ+852=
+25?entry=3Dgmail&source=3Dg>
+APNs: 303-17-135 & 303-17-134
+
+Price: $368,000
+
+Property Type: Multi-Family
+Zoning: MF-2 (City) / M-H High Density Multi-Family (County)
+Lot Size: 14,009 Sq Ft (1/3 Acre)
+
+Main House
+Beds: 3
+Baths: 2
+Sq Ft: 1,536
+
+Addition
+Sleeping Room + Bathroom
+Sq Ft: 252
+
+HVAC: Replaced with Used Unit 2 Years Ago
+Plumbing: Replumbed 6 Years Ago
+Water Heater: New
+Electrical: Redone 10 Years Ago
+
+Main House: Occupied, Month-to-Month Tenant
+Current Rent: $1,700/Month
+Studio Unit: Vacant
+3707 E Perkinsville St, Gilbert, AZ 85295
+<https://www.google.com/maps/search/3707+E+Perkinsville+St,+Gilbert,+AZ+852=
+95?entry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/kE129UhOc6N?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $419,000
+
+Beds: 3
+Baths: 3
+Sq Ft: 1,985
+
+Condition: Clean Property
+Location: Great Area
+10839 E Sonrisa Ave, Mesa, AZ 85212
+<https://www.google.com/maps/search/10839+E+Sonrisa+Ave,+Mesa,+AZ+85212?ent=
+ry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/YNvniVPNLYr?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $425,000
+
+Beds: 5
+Baths: 2
+Sq Ft: 2,283
+Lot Size: 7,173 Sq Ft
+Year Built: 2007
+
+AC: New
+Roof: Original; no leaks per seller
+Condition: Very Clean
+
+Notes: Currently used as a pad split. 5th bedroom is a walled-off room in
+the living area and can be removed to return the home to 4 bedrooms.
+3441 E Taylor St, Phoenix, AZ
+<https://www.google.com/maps/search/3441+E+Taylor+St,+Phoenix,+AZ+85008?ent=
+ry=3Dgmail&source=3Dg>
+ 85008
+<https://www.google.com/maps/search/3441+E+Taylor+St,+Phoenix,+AZ+85008?ent=
+ry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/GYeVrxljoNc?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $435,000
+ARV: $465,000
+
+Beds: 5
+Baths: 2
+Sq Ft: 2,150
+Pool: Yes
+
+Tenant Occupied
+Current Rent: $3,500/Month
+Lease Expires: May 2029
+1829 E Crocus Dr, Phoenix, AZ 85022
+<https://www.google.com/maps/search/1829+E+Crocus+Dr,+Phoenix,+AZ+85022?ent=
+ry=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/rQkaH0nICyY?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $450,000
+ARV: $580,000
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,626
+Lot Size: 7,358 Sq Ft
+Year Built: 1986
+Pool: Yes
+
+Vacant
+2902 W Pierce St, Phoenix, AZ 85009
+<https://us.list-manage.com/8ZkqWj1wmr1?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/rmHM8wPc__x?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $219,900
+ARV: $330,000+
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,405
+Lot Size: 6,199 Sq Ft
+Year Built: 1952
+HOA: No
+
+Vacant
+Access: Text for Access
+2119 W Danbury Rd, Phoenix, AZ 85023
+<https://us.list-manage.com/r6Z_E_SdtXS?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/1CHp4QBuBxC?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $259,900
+ARV: $375,000
+
+Beds: 3
+Baths: 1
+Sq Ft: 938
+Lot Size: 5,998 Sq Ft
+Year Built: 1972
+Carport: 1 Car
+
+Potential: Convert to 4 Bed / 2 Bath
+Potential Sq Ft After Carport Enclosure: Approx. 1,200
+
+HOA: None
+Vacant
+Access: Text for Access
+1216 E Hess Ave, Phoenix, AZ 85034
+<https://us.list-manage.com/uKRxG3WoXW_?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/1D01ot5M7jC?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $130,000
+ARV: $300,000
+Scrape & Build Potential: $400,000+
+
+Beds: 3
+Baths: 1
+Sq Ft: 1,178
+Lot Size: 7,536 Sq Ft
+Year Built: 1936
+
+Occupied
+Seller Will Vacate at Closing
+28 Driftwood Cir, Nogales, AZ 85621
+<https://us.list-manage.com/6mt7XkwZXRv?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+APN: 150-02-108
+
+PICTURES
+<https://us.list-manage.com/Sc0EnNvyA0K?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $129,990
+
+Beds: 4 + Den/Office
+Baths: 2
+Sq Ft: 1,775
+Lot Size: 16,117 Sq Ft
+Year Built: 1974
+Property Type: Single Family Home
+
+Water: City Water
+Sewer: City Sewer
+
+Vacant at COE
+6030 S 20th St, Phoenix, AZ 85042
+<https://us.list-manage.com/gI4VFP3wTFP?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/9pWmniUfIQF?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $209,900
+ARV: $330,000+
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,268
+Lot Size: 6,517 Sq Ft
+Year Built: 1961
+
+Carport: 1-Car
+AC: Good Condition per Seller
+Potential: Carport Can Be Enclosed for Additional Living Space or Garage
+
+EMD: $5,000
+Vacant at Close
+Access: Contact to Schedule Showing
+12901 W Solano Dr, Litchfield Park, AZ 85340
+<https://us.list-manage.com/ow1xCmWgZH2?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/xBLuT2nKqm4?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $769,990
+ARV: $1,400,000
+
+Beds: 4
+Baths: 2
+Sq Ft: 3,877
+Lot Size: 1.01 Acres
+Year Built: 1984
+Garage: 2-Car
+
+Post Possession: 14 Days
+Holdback: $10,000
+1533 W 5th St, Tempe, AZ 85281
+<https://us.list-manage.com/cXCMkfwZIT4?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/rX0f7vcFT3P?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $339,000
+ARV: $500,000
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,100
+Lot Size: 6,100 Sq Ft
+HOA: No
+
+Condition: Full Renovation Needed
+Potential: Fix & Flip / Rental / Student Housing
+Location: Near ASU & Downtown Tempe
+Transportation: Bus Pickup & Drop-Off Near Property with Service to ASU
+1617 E Earll Dr, Phoenix, AZ 85016
+<https://www.google.com/maps/search/1617+E+Earll+Dr,+Phoenix,+AZ+85016?entr=
+y=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/rcGLr_kWjcT?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $380,000
+
+Main House
+Beds: 3
+Baths: 2
+Sq Ft: 1,371
+
+Guest House
+Beds: 1
+Baths: 1.5
+Sq Ft: 720
+
+Workshop: Yes
+Carport: Yes
+Lot: Corner Lot
+
+COE: 09/28/2026
+9808 N 64th Pl, Paradise Valley, AZ 85253
+<https://us.list-manage.com/Jxuq8kuwWT5?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $2,150,000
+
+Beds: 4
+Baths: 2
+Sq Ft: 2,793
+Lot Size: 44,821 Sq Ft / 1.029 Acres
+Property Type: New Construction / Redevelopment Opportunity
+
+Sewer: City Sewer
+Block Wall: Yes
+HOA: No
+School District: Scottsdale Unified School District
+
+Opportunity: Paradise Valley New Construction / Teardown-Rebuild Site
+10826 S 25th Dr, Phoenix, AZ 85041
+<https://us.list-manage.com/NSk0J3anqXU?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/koi09LFtGak?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $300,000
+ARV: $1,500,000=E2=80=93$2,100,000
+
+Property Type: Vacant Land / City View Lot
+Subdivision: Phoenix Mountain View Estates
+Lot Size: 1.29 Acres
+
+City Water: On Lot
+Electric: On Lot
+Septic: Needed
+HOA: None
+
+Feature: Rare South Mountain City View Lot
+2312 E Nancy Ln, Phoenix, AZ 85042
+<https://www.google.com/maps/search/2312+E+Nancy+Ln,+Phoenix,+AZ+85042?entr=
+y=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/PrAcyFdAm5l?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $220,000
+ARV: $350,000+
+
+Beds: 3
+Baths: 1
+Sq Ft: 1,325
+Lot Size: 6,007 Sq Ft
+Year Built: 1958
+HOA: None
+Value Add: Potential to convert into a 4 Bed / 2 Bath
+
+EMD: $5,000
+COE: 09/28/2026
+Access: Text for Access
+4661 E Jadeite Dr, San Tan Valley, AZ 85143
+<https://us.list-manage.com/N7K1IZYAwgF?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/5y8FhnmMT5M?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $240,000
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,472
+Lot Size: 5,651 Sq Ft
+Year Built: 2014
+
+Solar: Owned
+Vacant
+1148 W Greenway Dr, Tempe, AZ 85282
+<https://us.list-manage.com/13EbwDiiQyR?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/VOVcMdOhJpF?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $355,000
+ARV: $500,000
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,506
+Lot Size: 8,697 Sq Ft
+Year Built: 1982
+Garage: 2-Car
+HOA: No
+
+Occupied
+Vacant at COE
+Access: Text for Access
+10436 N 37th Ave, Phoenix, AZ 85051
+<https://us.list-manage.com/15U6At7MVc7?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/TJSqDK5Rq5p?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $279,900
+ARV: $400,000
+
+Beds: 3
+Baths: 2
+Sq Ft: 1,337
+Lot Size: 8,255 Sq Ft
+Year Built: 1969
+Carport: 2-Car
+HOA: No
+
+Vacant
+Access: Text for Access
+5751 N 407th Ave, Tonopah, AZ 85354
+
+PICTURES
+<https://us.list-manage.com/Q0QtsLkiPct?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $429,900
+
+Beds: 5
+Baths: 4
+Sq Ft: 3,057
+Lot Size: 5 Acres
+Year Built: 2024
+
+Vacant
+22044 N 88th Ave, Peoria, AZ 85383
+<https://us.list-manage.com/OizXxGkEs6Z?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/jFyjrgzu13a?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $645,000
+
+Property Type: Two Homes on 1.04-Acre Lot
+Year Built: 1970
+Lot Size: 1.04 Acres
+
+Main Home
+Beds: 4
+Baths: 2.5
+Sq Ft: 1,860
+
+Second Home (ADU)
+Beds: 3
+Baths: 2
+Sq Ft: 1,500
+
+Car Lifts: 2
+Vacant by Appointment
+16905 S 32nd Ln, Phoenix, AZ 85045
+<https://us.list-manage.com/pSM8BV6L2Vi?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $290,000
+
+Lot Size: 23,534 Sq Ft
+Utilities: All Utilities Available
+Property Type: Vacant Land
+14763 E Circle M Ranch Pl, Vail, AZ 85641
+<https://us.list-manage.com/6iFdlX_ga9i?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $177,700
+ARV: $820,000=E2=80=93$1,350,000
+
+Lot Size: 1.72 Acres
+Property Type: Vacant Land
+
+Community: Coyote Creek =E2=80=93 Rincon Valley
+Potential: Builder / Developer / Luxury Custom Home Opportunity
+2423 W Mineral Rd, Phoenix, AZ 85041
+<https://www.google.com/maps/search/2423+W+Mineral+Rd,+Phoenix,+AZ+85041?en=
+try=3Dgmail&source=3Dg>
+
+PICTURES
+<https://us.list-manage.com/waqh5EyMWKw?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $620,000
+ARV: $750,000
+
+Beds: 4
+Baths: 3
+Sq Ft: 3,953 (includes added 364 Sq Ft area above kitchen)
+Lot Size: 7,808 Sq Ft
+Year Built: 2007
+Garage: 3-Car
+
+Pool: Yes; newer pump & timer, recently cleaned and filter serviced
+AC: Both units in good condition; one newer
+Roof: Original; inspected, underlayment good with no curling or leaks
+Water Heater: Good
+Features: Over $100K in custom finishes
+Views: Backs to South Mountain with unobstructed views
+
+COE: 10/15/2026
+1701 W Tuckey Ln, Unit 210, Phoenix, AZ 85015
+<https://us.list-manage.com/ryaJgGmxR1e?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/1BwX0vjRJ81?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $89,900
+
+Beds: 2
+Baths: 2
+Sq Ft: 998
+Year Built: 1971
+Property Type: Condo
+
+HOA: $488/Month
+HOA Includes: Water, Sewer, Trash, Electricity & Gas
+
+Vacant
+Access: Lockbox
+9040 S Comanche Rd, Tucson, AZ 85735
+<https://us.list-manage.com/11QYurR35bK?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+APN: 208-55-0830
+
+PICTURES
+<https://us.list-manage.com/rRU8HAfL5Ug?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $59,990
+
+Lot Size: 3 Acres (129,594 Sq Ft)
+Property Type: Vacant Land
+
+Utilities: Available
+Electric: Available
+Water: City Water
+Septic: Septic Tank
+19160 N Alcazar St, Maricopa, AZ 85138
+<https://us.list-manage.com/CdM_dJwkn6J?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/xf04fvhaX9_?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $335,000
+
+Beds: 4
+Baths: 3
+Sq Ft: 2,417
+Lot Size: 7,417 Sq Ft
+Year Built: 2023
+6437 E Calle Bellatrix, Tucson, AZ 85710
+<https://us.list-manage.com/J3kngHaXhds?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $175,000
+
+Beds: 4
+Baths: 2
+Sq Ft: 1,600
+Year Built: 1956
+
+Square Footage Addition Not Reflected in Records
+10757 N 74th St Unit 1036, Scottsdale, AZ 85260
+<https://us.list-manage.com/ht54fvhgu1i?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/csVwPedr9Xx?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $450,000
+
+Beds: 2
+Baths: 2
+Sq Ft: 1,414
+Year Built: 2007
+Garage: 2-Car
+10587 E Palomino Rd, Scottsdale, AZ 85258
+<https://us.list-manage.com/n3OzliPbSdI?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+PICTURES
+<https://us.list-manage.com/Ndab8sFrpjY?e=3D8f3e444893&c2id=3De0df7a9f0a415=
+8742e8b076c5578e079>
+
+Price: $945,000
+ARV: $1,500,000
+
+Beds: 3
+Baths: 3
+Sq Ft: 2,434
+Lot Size: 7,986 Sq Ft
+Year Built: 1985
+Garage: 2.5-Car
+Pool: Yes
+Wholesale Questions? Reach out to Spencer 480-283-4425
+*Copyright =C2=A9 2016 Gentry Real Estate, All rights reserved.*
+
+
+*Our mailing address is:*
+Gentry Real Estate
+3303 E. Baseline
+<https://www.google.com/maps/search/3303+E.+Baseline+Rd+%23119,+%0D%0AGilbe=
+rt+AZ+85234?entry=3Dgmail&source=3Dg>
+ Rd #119,
+<https://www.google.com/maps/search/3303+E.+Baseline+Rd+%23119,+%0D%0AGilbe=
+rt+AZ+85234?entry=3Dgmail&source=3Dg>
+Gilbert AZ 85234
+<https://www.google.com/maps/search/3303+E.+Baseline+Rd+%23119,+%0D%0AGilbe=
+rt+AZ+85234?entry=3Dgmail&source=3Dg>
+
+480-283-4425
+
+Want to change how you receive these emails?
+You can update your preferences
+<https://gentryrealestategroup.us8.list-manage.com/profile?u=3Dcae766a676ce=
+8580d3f4d2a6a&id=3Dbc4c104c01&e=3D8f3e444893&c=3Dcaa779f282>
+or unsubscribe from this list
+<https://gentryrealestategroup.us8.list-manage.com/unsubscribe?u=3Dcae766a6=
+76ce8580d3f4d2a6a&id=3Dbc4c104c01&t=3Db&e=3D8f3e444893&c=3Dcaa779f282>
+
+
+DISCLAIMER
+
+Gentry Real Estate respectfully notifies its customers, subscribers and the
+general readership of this ad that the accuracy of the information provided
+herein is not guaranteed by Gentry Real Estate.  Gentry Real Estate
+diligently researches the information set forth herein, but often relies on
+outside sources to provide the information.  The information is subject to
+error and, accordingly, the readers should rely upon their own
+investigation and due diligence prior to making any purchase or contract
+relative to the property advertised herein.
+
+Based on the foregoing, Gentry Real Estate disclaims any liability for
+reliance upon the information contained herein.
+
+--000000000000872129065b7578d8
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"auto"><br></div><div dir=3D"auto"><div><div dir=3D"ltr" class=
+=3D"gmail_signature" data-smartmail=3D"gmail_signature"><div dir=3D"ltr"><d=
+iv dir=3D"ltr"><div dir=3D"ltr"><div dir=3D"auto"><table align=3D"center" b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" height=3D"100%" width=3D"10=
+0%" id=3D"m_5420799047028384974bodyTable" style=3D"font-family:-apple-syste=
+m,sans-serif;border-collapse:collapse;height:100%;margin:0px;padding:0px;wi=
+dth:100%;background-color:rgb(250,250,250)"><tbody><tr><td align=3D"center"=
+ valign=3D"top" id=3D"m_5420799047028384974bodyCell" style=3D"height:100%;m=
+argin:0;padding:10px;width:100%;border-top:0"><table border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_5420799047028384974tem=
+plateContainer" style=3D"border-collapse:collapse;border:0;max-width:600px!=
+important"><tbody><tr><td valign=3D"top" id=3D"m_5420799047028384974templat=
+ePreheader" style=3D"background-origin:padding-box;background-clip:border-b=
+ox;background-image:none;background-repeat:no-repeat;background-position:ce=
+nter center;background-size:cover;border-top:0px;border-bottom:0px;padding-=
+top:9px;padding-bottom:9px"></td></tr><tr><td valign=3D"top" id=3D"m_542079=
+9047028384974templateHeader" style=3D"background:#ffffff none no-repeat cen=
+ter/cover;background-color:#ffffff;background-image:none;background-repeat:=
+no-repeat;background-position:center;background-size:cover;border-top:0;bor=
+der-bottom:0;padding-top:9px;padding-bottom:0"><table border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse:collaps=
+e"><tbody><tr><td valign=3D"top" style=3D"padding:9px"><table align=3D"left=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" class=3D"m_5420799047028=
+384974mcnCaptionBottomContent" style=3D"border-collapse:collapse;float:left=
+"><tbody><tr><td align=3D"center" valign=3D"top" style=3D"padding:0 9px 9px=
+ 9px"><img alt=3D"" src=3D"https://gallery.mailchimp.com/cae766a676ce8580d3=
+f4d2a6a/images/b3452bba-30a6-4a05-b626-811d7c5bf49a.jpg" width=3D"500" styl=
+e=3D"max-width: 500px; border: 0px; height: auto; outline: medium; vertical=
+-align: bottom;" class=3D"m_5420799047028384974mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;font-size:11px;text-align:center;word-=
+break:break-word;color:#202020;font-family:Helvetica;line-height:150%" widt=
+h=3D"564"><div><br><span style=3D"font-size:32px">Wholesale Opportunity</sp=
+an><br>
+=C2=A0</div><div><span style=3D"font-size:24px">Text Spencer 480-283-4425</=
+span></div></td></tr></tbody></table></td></tr></tbody></table></td></tr><t=
+r><td valign=3D"top" id=3D"m_5420799047028384974templateBody" style=3D"back=
+ground:#ffffff none no-repeat center/cover;background-color:#ffffff;backgro=
+und-image:none;background-repeat:no-repeat;background-position:center;backg=
+round-size:cover;border-top:0;border-bottom:2px solid #eaeaea;padding-top:0=
+;padding-bottom:9px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"100%" style=3D"min-width:100%;border-collapse:collapse"><tbody><=
+tr><td valign=3D"top" style=3D"padding-top:9px"><table align=3D"left" borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-wid=
+th:100%;border-collapse:collapse;float:left" width=3D"100%" class=3D"m_5420=
+799047028384974mcnTextContentContainer"><tbody><tr><td valign=3D"top" class=
+=3D"m_5420799047028384974mcnTextContent" style=3D"padding:0px 18px 9px;word=
+-break:break-word;color:rgb(32,32,32);font-family:Helvetica;line-height:150=
+%"><div style=3D"text-align:center"><a href=3D"https://us.list-manage.com/1=
+4BQRJJyXF1?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" styl=
+e=3D"color:rgb(0,124,137)" target=3D"_blank">View this email in your browse=
+r</a></div></td></tr></tbody></table></td></tr></tbody></table><table borde=
+r=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_54207=
+99047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:coll=
+apse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;p=
+adding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/bea4cffe-daa4-2522-9234-f1f14639d=
+43b.png" width=3D"564" style=3D"max-width: 1024px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/421+Hinton+St,+Eloy,+AZ+85716?entry=3Dgmail&am=
+p;source=3Dg">421 Hinton St, Eloy, AZ 85716</a><br>
+APN: 411-09-0560<br><br><a href=3D"https://us.list-manage.com/7N9IoPjCY6q?e=
+=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:r=
+gb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $19,000<br><br>
+Lot Size: 0.15 Acres<br>
+Property Type: Vacant Land
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/8d9bb154-be1d-7576-e095-09e0aeb12=
+118.png" width=3D"564" style=3D"max-width: 1200px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/7836+E+Sugarloaf+St,+Kingman,+AZ+86401?entry=
+=3Dgmail&amp;source=3Dg">7836 E Sugarloaf St, Kingman, AZ 86401</a><br>
+Parcel #: 313-49-254<br><br>
+Price: $23,990<br>
+ARV: $250,000<br><br>
+Lot Size: 13,068 Sq Ft (0.30 Acres)<br>
+Property Type: Vacant Land<br><br>
+Utilities: Available at Lot Line
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/3c0327af-f44e-d2bb-45db-a9233c432=
+4fa.png" width=3D"418" style=3D"max-width: 418px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/635+E+Mohave+Cir,+Eloy,+AZ+85131?entry=3Dgmail=
+&amp;source=3Dg">635 E Mohave Cir, Eloy, AZ 85131</a><br><br><a href=3D"htt=
+ps://us.list-manage.com/vaSlru6cfrH?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415=
+8742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTU=
+RES</a><br><br>
+Price: $45,000<br>
+ARV: $100,000<br><br>
+Property Type: Affixed Manufactured Home with Land<br>
+Land: Included<br>
+Condition: Sold AS-IS
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/67c3f320-275f-c047-a508-4c3154c7a=
+9a8.png" width=3D"564" style=3D"max-width: 969px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/114+S+McNab+Pkwy,+San+Manuel,+AZ+85631?entry=
+=3Dgmail&amp;source=3Dg">114 S McNab Pkwy, San Manuel, AZ 85631</a><br><br>=
+<a href=3D"https://us.list-manage.com/J1MBRnj3xLL?e=3D8f3e444893&amp;c2id=
+=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=
+=3D"_blank">PICTURES</a><br><br>
+Price: $74,900<br><br>
+Beds: 4<br>
+Baths: 1<br>
+Sq Ft: 1,080<br>
+Lot Size: 8,277 Sq Ft<br>
+Year Built: 1954<br><br>
+Roof: Needs Replacement<br>
+AC: Needs Replacement<br><br>
+Vacant<br>
+Access: Contact for Access<br>
+COE: 09/28/2026
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/074db32d-03bc-350f-4010-6429b7fca=
+f9b.jpg" width=3D"564" style=3D"max-width: 600px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/33042+N+225th+Ave,+Wittmann,+AZ+85361?entry=3D=
+gmail&amp;source=3Dg">33042 N 225th Ave, Wittmann, AZ 85361</a><br><br><a h=
+ref=3D"https://us.list-manage.com/baw3Qgw7Kq7?e=3D8f3e444893&amp;c2id=3De0d=
+f7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_bl=
+ank">PICTURES</a><br><br>
+Price: $120,000<br><br>
+Beds: 2<br>
+Baths: 2<br>
+Sq Ft: 924<br>
+Lot Size: 6,000 Sq Ft<br>
+Year Built: 2005<br><br>
+HOA: No<br>
+Water: Public<br>
+Sewer: Septic<br><br>
+Vacant at Close
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/e82391fe-4f19-7456-d02d-8b6b09575=
+1ae.png" width=3D"564" style=3D"max-width: 819px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/14421+W+Desert+Owl+Way,+Marana,+AZ+85653?entry=
+=3Dgmail&amp;source=3Dg">14421 W Desert Owl Way, Marana, AZ 85653</a><br><b=
+r><a href=3D"https://us.list-manage.com/17XaShSsrLE?e=3D8f3e444893&amp;c2id=
+=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=
+=3D"_blank">PICTURES</a><br><br>
+Price: $130,000<br><br>
+Beds: 2<br>
+Baths: 2<br>
+Sq Ft: 1,300<br>
+Lot Size: 4.40 Acres / 191,664 Sq Ft<br>
+Year Built: 1980<br><br>
+Water: Well<br>
+Sewer: Septic; may need repair/replacement<br>
+Affixture: All paperwork at title to be affixed<br><br>
+EMD: $5,000 Nonrefundable
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/93f97473-7db9-ab70-d150-bdd9b36a8=
+ea8.jpg" width=3D"564" style=3D"max-width: 1796px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/1218+S+13th+Ave,+Phoenix,+AZ+85007?entry=3Dgma=
+il&amp;source=3Dg">1218 S 13th Ave, Phoenix, AZ 85007</a><br>
+APN: 105-02-099A<br><br>
+Price: $147,500<br><br>
+Zoning: R3<br>
+Lot Size: ~9,853 Sq Ft<br>
+Lot Dimensions: 75&#39; =C3=97 131.39&#39;<br>
+Property Type: Vacant Land<br><br>
+Utilities: Stubbed at Lot Line<br>
+Best Use: Triplex Development
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/6dc31968-e0f9-f279-0980-a0bb83fdf=
+e5f.png" width=3D"414" style=3D"max-width: 414px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/15448+W+Port+Royale+Ln,+Surprise,+AZ+85379?ent=
+ry=3Dgmail&amp;source=3Dg">15448 W Port Royale Ln, Surprise, AZ 85379</a><b=
+r><br><a href=3D"https://us.list-manage.com/tFAiMe1PTzI?e=3D8f3e444893&amp;=
+c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" tar=
+get=3D"_blank">PICTURES</a><br><br>
+Price: $172,500<br><br>
+Beds: 3<br>
+Baths: 3<br>
+Sq Ft: 1,615<br>
+Lot Size: 5,624 Sq Ft<br>
+Year Built: 2001<br>
+Garage: 2-Car<br>
+HOA: $171/Quarter<br><br>
+Condition: Fire-damaged home; first level appears to be in good condition. =
+Property needs updating to reach its full potential.
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/e33728ea-ba47-bac6-41fa-73b9b44da=
+4a6.jpg" width=3D"564" style=3D"max-width: 1600px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/11116+W+Montana+Ave,+Youngtown,+AZ+85363?entry=
+=3Dgmail&amp;source=3Dg">11116 W Montana Ave, Youngtown, AZ 85363</a><br><b=
+r><a href=3D"https://us.list-manage.com/S3ayjD4qEeE?e=3D8f3e444893&amp;c2id=
+=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=
+=3D"_blank">PICTURES</a><br><br>
+Price: $195,000<br><br>
+Beds: 2<br>
+Baths: 1<br>
+Sq Ft: 1,685<br><br>
+ADU Potential: Yes =E2=80=93 Backyard Structure Needs Plumbing<br><br>
+EMD: $5,000<br>
+COE: 30 Days
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/b67336a4-77ca-75f2-8cb3-70ed19c7c=
+493.png" width=3D"564" style=3D"max-width: 2026px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/1109+N+27th+Dr,+Phoenix,+AZ+85009?entry=3Dgmai=
+l&amp;source=3Dg">1109 N 27th Dr, Phoenix, AZ 85009</a><br><br><a href=3D"h=
+ttps://us.list-manage.com/_55bPJ3nUvc?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4=
+158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PIC=
+TURES</a><br><br>
+Price: $229,900<br>
+ARV: $330,000+<br><br>
+Beds: 3<br>
+Baths: 1<br>
+Sq Ft: 1,278<br>
+Lot Size: 6,630 Sq Ft<br>
+Year Built: 1954<br>
+Carport: 1-Car<br>
+HOA: No<br><br>
+Vacant<br>
+Access: Text for Access
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/8824793a-36e3-de90-dcb6-660c3b3c6=
+f9b.png" width=3D"564" style=3D"max-width: 1768px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/3620+W+Missouri+Ave,+Phoenix,+AZ+85019?entry=
+=3Dgmail&amp;source=3Dg">3620 W Missouri Ave, Phoenix, AZ 85019</a><br><br>=
+<a href=3D"https://us.list-manage.com/Hulladmw6vr?e=3D8f3e444893&amp;c2id=
+=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=
+=3D"_blank">PICTURES</a><br><br>
+Price: $235,000<br>
+ARV: $375,000+<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,452<br>
+Lot Size: 6,521 Sq Ft<br>
+Year Built: 1958<br>
+HOA: No<br><br>
+Vacant<br>
+Access: Text for Access
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/6922d954-f14a-2359-ebfb-b21107c2a=
+448.jpg" width=3D"564" style=3D"max-width: 1200px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/19Ubp4d0UBe?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">35122 N =
+Happy Jack Dr, San Tan Valley, AZ 85143</a><br>
+APN: 509-03-543<br><br><a href=3D"https://us.list-manage.com/G9A5t4ZqUO_?e=
+=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:r=
+gb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $252,900<br><br>
+Beds: 2<br>
+Baths: 2<br>
+Sq Ft: 1,311<br>
+Year Built: 2005<br>
+Property Type: Single Family Home<br><br>
+New AC<br>
+City Water<br>
+City Sewer<br>
+HOA: $85/Month<br><br>
+Vacant at COE
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/c5515973-edaf-bbb3-c157-ca65efb6d=
+8a1.jpg" width=3D"564" style=3D"max-width: 686px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/7038+W+Karen+Lee+Ln,+Peoria,+AZ+85382?entry=3D=
+gmail&amp;source=3Dg">7038 W Karen Lee Ln, Peoria, AZ 85382</a><br>
+APN: 200-52-811<br><br><a href=3D"https://us.list-manage.com/uRIKwUtNDKN?e=
+=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:r=
+gb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $270,000<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,874<br>
+Lot Size: 0.253 Acres (11,034 Sq Ft)<br>
+Year Built: 1980<br>
+Property Type: Manufactured Home<br><br>
+Pool: Private<br>
+Roof: New in 2025<br>
+HVAC: New in 2025<br>
+Solar: Lease<br>
+Water: Public<br>
+Power: Public<br>
+Sewer: Septic
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/c66edca2-f913-c32d-ad08-605371910=
+3be.jpg" width=3D"564" style=3D"max-width: 1200px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/1506+E+Stirrup+Ln,+San+Tan+Valley,+AZ+85143?en=
+try=3Dgmail&amp;source=3Dg">1506 E Stirrup Ln, San Tan Valley, AZ 85143</a>=
+<br><br><a href=3D"https://us.list-manage.com/5mZa74gAF43?e=3D8f3e444893&am=
+p;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" t=
+arget=3D"_blank">PICTURES</a><br><br>
+Price: $275,000<br><br>
+Beds: 4<br>
+Baths: 2<br>
+Sq Ft: 1,801<br>
+Lot Size: 5,227 Sq Ft<br>
+Year Built: 2006<br>
+Garage: 2-Car
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/d0ac9830-9c6e-c670-7537-6a5436c31=
+b42.png" width=3D"469" style=3D"max-width: 469px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/2242+W+Hayden+Peak+Dr,+San+Tan+Valley,+AZ+8514=
+3?entry=3Dgmail&amp;source=3Dg">2242 W Hayden Peak Dr, San Tan Valley, AZ 8=
+5143</a><br><br><a href=3D"https://us.list-manage.com/4efcK0KoPLP?e=3D8f3e4=
+44893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124=
+,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $290,000<br><br>
+Beds: 4<br>
+Baths: 2<br>
+Sq Ft: 1,520<br>
+Lot Size: 10,018 Sq Ft<br>
+Year Built: 2002<br>
+Garage: 2-Car<br><br>
+Lease in Place<br>
+Lease Expires: 12/02/2026
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/0265c410-6b35-4928-be45-0dec6666f=
+292.jpg" width=3D"564" style=3D"max-width: 1200px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/24939+W+Durango+St,+Buckeye,+AZ+85326?entry=3D=
+gmail&amp;source=3Dg">24939 W Durango St, Buckeye, AZ 85326</a><br><br><a h=
+ref=3D"https://us.list-manage.com/179iuzGAbEb?e=3D8f3e444893&amp;c2id=3De0d=
+f7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_bl=
+ank">PICTURES</a><br><br>
+Price: $319,990<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,361<br>
+Lot Size: 41,818 Sq Ft<br>
+Year Built: 1971<br>
+Property Type: Manufactured Home
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/d18c69dc-8b14-3d76-22f1-1ceefe0df=
+994.jpg" width=3D"564" style=3D"max-width: 1320px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/FFfnv73JKec?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">2929 E E=
+berle Ln, Phoenix, AZ 85032</a><br><br><a href=3D"https://us.list-manage.co=
+m/WxlbJiOc3A0?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" s=
+tyle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $319,999<br>
+ARV: $500,000+<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,670<br>
+Lot Size: 9,931 Sq Ft<br>
+Year Built: 1971<br><br>
+Zoning: Multi-Family (R-3)<br>
+HOA: None<br><br>
+COE: 09/23/2026<br>
+Vacant<br>
+Access: Text for Access
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/ab0b52eb-1c26-e968-199b-04d8c1fde=
+f87.jpg" width=3D"564" style=3D"max-width: 960px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/1207+E+Desert+Cove+Ave,+Phoenix,+AZ+85020?entr=
+y=3Dgmail&amp;source=3Dg">1207 E Desert Cove Ave, Phoenix, AZ 85020</a><br>=
+<br>
+Price: $320,000<br>
+ARV: $450,000<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,421<br>
+Lot Size: 6,000 Sq Ft<br><br>
+Carport: Yes<br>
+RV Gate: Yes<br>
+Mountain Views: Yes<br>
+Condition: Clean House
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/b39e79e2-4eb9-675b-9483-6e81e1748=
+9bd.jpg" width=3D"564" style=3D"max-width: 686px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/1540+S+Carpenter+Ln,+Cottonwood,+AZ+86326?entr=
+y=3Dgmail&amp;source=3Dg">1540 S Carpenter Ln, Cottonwood, AZ 86326</a><br>
+APN: 406-48-305<br><br><a href=3D"https://us.list-manage.com/O7ksTYO3YDa?e=
+=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:r=
+gb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $359,000<br><br>
+Beds: 2 + Den<br>
+Baths: 2<br>
+Sq Ft: 1,639<br>
+Lot Size: 0.55 Acres (23,963 Sq Ft)<br>
+Year Built: 2004<br>
+Property Type: SFR<br><br>
+Water: Public<br>
+Power: Public<br>
+Sewer: Septic<br>
+Solar: Tesla =E2=80=93 $128/Month
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/0b036f38-0e9f-273d-ebf5-86271886d=
+ebf.png" width=3D"564" style=3D"max-width: 640px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/4751+E+Hopi+Cir,+Mesa,+AZ+85206?entry=3Dgmail&=
+amp;source=3Dg">4751 E Hopi Cir, Mesa, AZ 85206</a><br><br><a href=3D"https=
+://us.list-manage.com/14OPiZqc06W?e=3D8f3e444893&amp;c2id=3De0df7a9f0a41587=
+42e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURE=
+S</a><br><br>
+Price: $359,900<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,847<br>
+Lot Size: 6,838 Sq Ft<br>
+Year Built: 1996<br>
+Garage: 2-Car<br>
+Property Type: Single Family<br><br>
+Condition: Mostly original; needs updating to reach maximum value<br><br>
+EMD: $5,000<br>
+COE: 10/02/2026
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/7e4a975d-ab6d-7b39-591c-fca335d92=
+40c.png" width=3D"564" style=3D"max-width: 1466px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/199++185+E+Morelos+St,+Chandler,+AZ+85225?entr=
+y=3Dgmail&amp;source=3Dg">199 </a>&amp; <a href=3D"https://www.google.com/m=
+aps/search/199++185+E+Morelos+St,+Chandler,+AZ+85225?entry=3Dgmail&amp;sour=
+ce=3Dg">185 E Morelos St, Chandler, AZ 85225</a><br>
+APNs: 303-17-135 &amp; 303-17-134<br><br>
+Price: $368,000<br><br>
+Property Type: Multi-Family<br>
+Zoning: MF-2 (City) / M-H High Density Multi-Family (County)<br>
+Lot Size: 14,009 Sq Ft (1/3 Acre)<br><br>
+Main House<br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,536<br><br>
+Addition<br>
+Sleeping Room + Bathroom<br>
+Sq Ft: 252<br><br>
+HVAC: Replaced with Used Unit 2 Years Ago<br>
+Plumbing: Replumbed 6 Years Ago<br>
+Water Heater: New<br>
+Electrical: Redone 10 Years Ago<br><br>
+Main House: Occupied, Month-to-Month Tenant<br>
+Current Rent: $1,700/Month<br>
+Studio Unit: Vacant
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/2275d603-7766-f216-effa-6bfc63b41=
+a15.png" width=3D"564" style=3D"max-width: 963px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/3707+E+Perkinsville+St,+Gilbert,+AZ+85295?entr=
+y=3Dgmail&amp;source=3Dg">3707 E Perkinsville St, Gilbert, AZ 85295</a><br>=
+<br><a href=3D"https://us.list-manage.com/kE129UhOc6N?e=3D8f3e444893&amp;c2=
+id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" targe=
+t=3D"_blank">PICTURES</a><br><br>
+Price: $419,000<br><br>
+Beds: 3<br>
+Baths: 3<br>
+Sq Ft: 1,985<br><br>
+Condition: Clean Property<br>
+Location: Great Area
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/d35d879f-0931-4914-3281-f112dcbfb=
+834.png" width=3D"564" style=3D"max-width: 739px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/10839+E+Sonrisa+Ave,+Mesa,+AZ+85212?entry=3Dgm=
+ail&amp;source=3Dg">10839 E Sonrisa Ave, Mesa, AZ 85212</a><br><br><a href=
+=3D"https://us.list-manage.com/YNvniVPNLYr?e=3D8f3e444893&amp;c2id=3De0df7a=
+9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank=
+">PICTURES</a><br><br>
+Price: $425,000<br><br>
+Beds: 5<br>
+Baths: 2<br>
+Sq Ft: 2,283<br>
+Lot Size: 7,173 Sq Ft<br>
+Year Built: 2007<br><br>
+AC: New<br>
+Roof: Original; no leaks per seller<br>
+Condition: Very Clean<br><br>
+Notes: Currently used as a pad split. 5th bedroom is a walled-off room in t=
+he living area and can be removed to return the home to 4 bedrooms.
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/a1be53d3-a7c8-bfdf-437f-0d2786f64=
+038.png" width=3D"564" style=3D"max-width: 852px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/3441+E+Taylor+St,+Phoenix,+AZ+85008?entry=3Dgm=
+ail&amp;source=3Dg">3441 E Taylor St, Phoenix, AZ</a>=C2=A0<a href=3D"https=
+://www.google.com/maps/search/3441+E+Taylor+St,+Phoenix,+AZ+85008?entry=3Dg=
+mail&amp;source=3Dg">85008</a><br><br><a href=3D"https://us.list-manage.com=
+/GYeVrxljoNc?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" st=
+yle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $435,000<br>
+ARV: $465,000<br><br>
+Beds: 5<br>
+Baths: 2<br>
+Sq Ft: 2,150<br>
+Pool: Yes<br><br>
+Tenant Occupied<br>
+Current Rent: $3,500/Month<br>
+Lease Expires: May 2029
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/f4b68690-d628-35e5-6db7-762aff9eb=
+13f.png" width=3D"564" style=3D"max-width: 820px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/1829+E+Crocus+Dr,+Phoenix,+AZ+85022?entry=3Dgm=
+ail&amp;source=3Dg">1829 E Crocus Dr, Phoenix, AZ 85022</a><br><br><a href=
+=3D"https://us.list-manage.com/rQkaH0nICyY?e=3D8f3e444893&amp;c2id=3De0df7a=
+9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank=
+">PICTURES</a><br><br>
+Price: $450,000<br>
+ARV: $580,000<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,626<br>
+Lot Size: 7,358 Sq Ft<br>
+Year Built: 1986<br>
+Pool: Yes<br><br>
+Vacant
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/86386589-b01c-28e7-ecd3-f8b2d1280=
+2e6.jpg" width=3D"564" style=3D"max-width: 686px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/8ZkqWj1wmr1?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">2902 W P=
+ierce St, Phoenix, AZ 85009</a><br><br><a href=3D"https://us.list-manage.co=
+m/rmHM8wPc__x?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" s=
+tyle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $219,900<br>
+ARV: $330,000+<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,405<br>
+Lot Size: 6,199 Sq Ft<br>
+Year Built: 1952<br>
+HOA: No<br><br>
+Vacant<br>
+Access: Text for Access
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/765dcce5-87c3-9b8e-e961-d44246e49=
+8d8.jpg" width=3D"564" style=3D"max-width: 1200px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/r6Z_E_SdtXS?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">2119 W D=
+anbury Rd, Phoenix, AZ 85023</a><br><br><a href=3D"https://us.list-manage.c=
+om/1CHp4QBuBxC?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" =
+style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $259,900<br>
+ARV: $375,000<br><br>
+Beds: 3<br>
+Baths: 1<br>
+Sq Ft: 938<br>
+Lot Size: 5,998 Sq Ft<br>
+Year Built: 1972<br>
+Carport: 1 Car<br><br>
+Potential: Convert to 4 Bed / 2 Bath<br>
+Potential Sq Ft After Carport Enclosure: Approx. 1,200<br><br>
+HOA: None<br>
+Vacant<br>
+Access: Text for Access
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/3fce11c9-dfa3-f3b9-2555-a333400e3=
+35d.jpg" width=3D"564" style=3D"max-width: 828px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/uKRxG3WoXW_?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">1216 E H=
+ess Ave, Phoenix, AZ 85034</a><br><br><a href=3D"https://us.list-manage.com=
+/1D01ot5M7jC?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" st=
+yle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $130,000<br>
+ARV: $300,000<br>
+Scrape &amp; Build Potential: $400,000+<br><br>
+Beds: 3<br>
+Baths: 1<br>
+Sq Ft: 1,178<br>
+Lot Size: 7,536 Sq Ft<br>
+Year Built: 1936<br><br>
+Occupied<br>
+Seller Will Vacate at Closing
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/ee091fdd-9529-b846-0a46-230e2897e=
+30b.png" width=3D"564" style=3D"max-width: 691px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/6mt7XkwZXRv?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">28 Drift=
+wood Cir, Nogales, AZ 85621</a><br>
+APN: 150-02-108<br><br><a href=3D"https://us.list-manage.com/Sc0EnNvyA0K?e=
+=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:r=
+gb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $129,990<br><br>
+Beds: 4 + Den/Office<br>
+Baths: 2<br>
+Sq Ft: 1,775<br>
+Lot Size: 16,117 Sq Ft<br>
+Year Built: 1974<br>
+Property Type: Single Family Home<br><br>
+Water: City Water<br>
+Sewer: City Sewer<br><br>
+Vacant at COE
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/032e642c-2d1d-f1b1-8642-6adeb3b29=
+1f4.png" width=3D"564" style=3D"max-width: 1240px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/gI4VFP3wTFP?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">6030 S 2=
+0th St, Phoenix, AZ 85042</a><br><br><a href=3D"https://us.list-manage.com/=
+9pWmniUfIQF?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" sty=
+le=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $209,900<br>
+ARV: $330,000+<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,268<br>
+Lot Size: 6,517 Sq Ft<br>
+Year Built: 1961<br><br>
+Carport: 1-Car<br>
+AC: Good Condition per Seller<br>
+Potential: Carport Can Be Enclosed for Additional Living Space or Garage<br=
+><br>
+EMD: $5,000<br>
+Vacant at Close<br>
+Access: Contact to Schedule Showing
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/b122fcc6-2b29-cf52-1eb0-d310c9256=
+439.png" width=3D"564" style=3D"max-width: 1024px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/ow1xCmWgZH2?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">12901 W =
+Solano Dr, Litchfield Park, AZ 85340</a><br><br><a href=3D"https://us.list-=
+manage.com/xBLuT2nKqm4?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c55=
+78e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><b=
+r>
+Price: $769,990<br>
+ARV: $1,400,000<br><br>
+Beds: 4<br>
+Baths: 2<br>
+Sq Ft: 3,877<br>
+Lot Size: 1.01 Acres<br>
+Year Built: 1984<br>
+Garage: 2-Car<br><br>
+Post Possession: 14 Days<br>
+Holdback: $10,000
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/9c2c8bf6-a500-051f-5b8b-6b404a9ee=
+144.png" width=3D"564" style=3D"max-width: 1212px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/cXCMkfwZIT4?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">1533 W 5=
+th St, Tempe, AZ 85281</a><br><br><a href=3D"https://us.list-manage.com/rX0=
+f7vcFT3P?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=
+=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $339,000<br>
+ARV: $500,000<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,100<br>
+Lot Size: 6,100 Sq Ft<br>
+HOA: No<br><br>
+Condition: Full Renovation Needed<br>
+Potential: Fix &amp; Flip / Rental / Student Housing<br>
+Location: Near ASU &amp; Downtown Tempe<br>
+Transportation: Bus Pickup &amp; Drop-Off Near Property with Service to ASU
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/c448d165-78d6-8619-110a-78cfd84dd=
+05e.jpg" width=3D"564" style=3D"max-width: 1024px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/1617+E+Earll+Dr,+Phoenix,+AZ+85016?entry=3Dgma=
+il&amp;source=3Dg">1617 E Earll Dr, Phoenix, AZ 85016</a><br><br><a href=3D=
+"https://us.list-manage.com/rcGLr_kWjcT?e=3D8f3e444893&amp;c2id=3De0df7a9f0=
+a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">P=
+ICTURES</a><br><br>
+Price: $380,000<br><br>
+Main House<br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,371<br><br>
+Guest House<br>
+Beds: 1<br>
+Baths: 1.5<br>
+Sq Ft: 720<br><br>
+Workshop: Yes<br>
+Carport: Yes<br>
+Lot: Corner Lot<br><br>
+COE: 09/28/2026
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/0c29f98f-d84d-fbcb-4d6d-d35b836f5=
+5ac.png" width=3D"564" style=3D"max-width: 631px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/Jxuq8kuwWT5?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">9808 N 6=
+4th Pl, Paradise Valley, AZ 85253</a><br><br>
+Price: $2,150,000<br><br>
+Beds: 4<br>
+Baths: 2<br>
+Sq Ft: 2,793<br>
+Lot Size: 44,821 Sq Ft / 1.029 Acres<br>
+Property Type: New Construction / Redevelopment Opportunity<br><br>
+Sewer: City Sewer<br>
+Block Wall: Yes<br>
+HOA: No<br>
+School District: Scottsdale Unified School District<br><br>
+Opportunity: Paradise Valley New Construction / Teardown-Rebuild Site
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/27ac89ce-e698-3139-1aae-920b1b2dd=
+ede.png" width=3D"564" style=3D"max-width: 2462px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/NSk0J3anqXU?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">10826 S =
+25th Dr, Phoenix, AZ 85041</a><br><br><a href=3D"https://us.list-manage.com=
+/koi09LFtGak?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" st=
+yle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $300,000<br>
+ARV: $1,500,000=E2=80=93$2,100,000<br><br>
+Property Type: Vacant Land / City View Lot<br>
+Subdivision: Phoenix Mountain View Estates<br>
+Lot Size: 1.29 Acres<br><br>
+City Water: On Lot<br>
+Electric: On Lot<br>
+Septic: Needed<br>
+HOA: None<br><br>
+Feature: Rare South Mountain City View Lot
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/cb41496c-3bd6-c711-c131-9b578c0a4=
+f7b.png" width=3D"564" style=3D"max-width: 1232px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/2312+E+Nancy+Ln,+Phoenix,+AZ+85042?entry=3Dgma=
+il&amp;source=3Dg">2312 E Nancy Ln, Phoenix, AZ 85042</a><br><br><a href=3D=
+"https://us.list-manage.com/PrAcyFdAm5l?e=3D8f3e444893&amp;c2id=3De0df7a9f0=
+a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">P=
+ICTURES</a><br><br>
+Price: $220,000<br>
+ARV: $350,000+<br><br>
+Beds: 3<br>
+Baths: 1<br>
+Sq Ft: 1,325<br>
+Lot Size: 6,007 Sq Ft<br>
+Year Built: 1958<br>
+HOA: None<br>
+Value Add: Potential to convert into a 4 Bed / 2 Bath<br><br>
+EMD: $5,000<br>
+COE: 09/28/2026<br>
+Access: Text for Access
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/8fe0d33e-2769-ad42-d73e-9adab1ffb=
+8bf.jpg" width=3D"564" style=3D"max-width: 853px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/N7K1IZYAwgF?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">4661 E J=
+adeite Dr, San Tan Valley, AZ 85143</a><br><br><a href=3D"https://us.list-m=
+anage.com/5y8FhnmMT5M?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c557=
+8e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br=
+>
+Price: $240,000<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,472<br>
+Lot Size: 5,651 Sq Ft<br>
+Year Built: 2014<br><br>
+Solar: Owned<br>
+Vacant
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/f95c0a1d-6ec6-dda6-4f2c-5c05e6223=
+518.jpg" width=3D"564" style=3D"max-width: 1118px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/13EbwDiiQyR?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">1148 W G=
+reenway Dr, Tempe, AZ 85282</a><br><br><a href=3D"https://us.list-manage.co=
+m/VOVcMdOhJpF?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" s=
+tyle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $355,000<br>
+ARV: $500,000<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,506<br>
+Lot Size: 8,697 Sq Ft<br>
+Year Built: 1982<br>
+Garage: 2-Car<br>
+HOA: No<br><br>
+Occupied<br>
+Vacant at COE<br>
+Access: Text for Access
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/76a113a2-8ebf-b276-ffc1-f02fa4218=
+902.png" width=3D"564" style=3D"max-width: 1678px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/15U6At7MVc7?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">10436 N =
+37th Ave, Phoenix, AZ 85051</a><br><br><a href=3D"https://us.list-manage.co=
+m/TJSqDK5Rq5p?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" s=
+tyle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $279,900<br>
+ARV: $400,000<br><br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,337<br>
+Lot Size: 8,255 Sq Ft<br>
+Year Built: 1969<br>
+Carport: 2-Car<br>
+HOA: No<br><br>
+Vacant<br>
+Access: Text for Access
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/933bf100-2d17-15d3-6c39-1eed7db6a=
+be2.jpg" width=3D"564" style=3D"max-width: 686px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564">
+            5751 N=C2=A0407th Ave, Tonopah, AZ 85354<br><br><a href=3D"http=
+s://us.list-manage.com/Q0QtsLkiPct?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158=
+742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTUR=
+ES</a><br><br>
+Price: $429,900<br><br>
+Beds: 5<br>
+Baths: 4<br>
+Sq Ft: 3,057<br>
+Lot Size: 5 Acres<br>
+Year Built: 2024<br><br>
+Vacant
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/ff67923b-b140-8d68-5042-bc5b819a2=
+3ac.png" width=3D"396" style=3D"max-width: 396px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/OizXxGkEs6Z?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">22044 N =
+88th Ave, Peoria, AZ 85383</a><br><br><a href=3D"https://us.list-manage.com=
+/jFyjrgzu13a?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" st=
+yle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $645,000<br><br>
+Property Type: Two Homes on 1.04-Acre Lot<br>
+Year Built: 1970<br>
+Lot Size: 1.04 Acres<br><br>
+Main Home<br>
+Beds: 4<br>
+Baths: 2.5<br>
+Sq Ft: 1,860<br><br>
+Second Home (ADU)<br>
+Beds: 3<br>
+Baths: 2<br>
+Sq Ft: 1,500<br><br>
+Car Lifts: 2<br>
+Vacant by Appointment
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/d9c07d5d-42ac-0258-4b24-c3caac466=
+af0.png" width=3D"564" style=3D"max-width: 852px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/pSM8BV6L2Vi?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">16905 S =
+32nd Ln, Phoenix, AZ 85045</a><br><br>
+Price: $290,000<br><br>
+Lot Size: 23,534 Sq Ft<br>
+Utilities: All Utilities Available<br>
+Property Type: Vacant Land
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/601f9b06-267e-8f29-3100-6ce271019=
+cc2.jpg" width=3D"564" style=3D"max-width: 1080px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/6iFdlX_ga9i?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">14763 E =
+Circle M Ranch Pl, Vail, AZ 85641</a><br><br>
+Price: $177,700<br>
+ARV: $820,000=E2=80=93$1,350,000<br><br>
+Lot Size: 1.72 Acres<br>
+Property Type: Vacant Land<br><br>
+Community: Coyote Creek =E2=80=93 Rincon Valley<br>
+Potential: Builder / Developer / Luxury Custom Home Opportunity
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/88e44459-3b00-28fb-ad0e-a50948fe8=
+a43.jpg" width=3D"564" style=3D"max-width: 960px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//www.google.com/maps/search/2423+W+Mineral+Rd,+Phoenix,+AZ+85041?entry=3Dg=
+mail&amp;source=3Dg">2423 W Mineral Rd, Phoenix, AZ 85041</a><br><br><a hre=
+f=3D"https://us.list-manage.com/waqh5EyMWKw?e=3D8f3e444893&amp;c2id=3De0df7=
+a9f0a4158742e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blan=
+k">PICTURES</a><br><br>
+Price: $620,000<br>
+ARV: $750,000<br><br>
+Beds: 4<br>
+Baths: 3<br>
+Sq Ft: 3,953 (includes added 364 Sq Ft area above kitchen)<br>
+Lot Size: 7,808 Sq Ft<br>
+Year Built: 2007<br>
+Garage: 3-Car<br><br>
+Pool: Yes; newer pump &amp; timer, recently cleaned and filter serviced<br>
+AC: Both units in good condition; one newer<br>
+Roof: Original; inspected, underlayment good with no curling or leaks<br>
+Water Heater: Good<br>
+Features: Over $100K in custom finishes<br>
+Views: Backs to South Mountain with unobstructed views<br><br>
+COE: 10/15/2026
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/681a9809-c232-c800-8c33-bea40af51=
+a75.jpg" width=3D"564" style=3D"max-width: 800px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/ryaJgGmxR1e?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">1701 W T=
+uckey Ln, Unit 210, Phoenix, AZ 85015</a><br><br><a href=3D"https://us.list=
+-manage.com/1BwX0vjRJ81?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5=
+578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><=
+br>
+Price: $89,900<br><br>
+Beds: 2<br>
+Baths: 2<br>
+Sq Ft: 998<br>
+Year Built: 1971<br>
+Property Type: Condo<br><br>
+HOA: $488/Month<br>
+HOA Includes: Water, Sewer, Trash, Electricity &amp; Gas<br><br>
+Vacant<br>
+Access: Lockbox
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/84f98980-8582-82a4-f018-464f0cb0c=
+7aa.png" width=3D"564" style=3D"max-width: 594px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/11QYurR35bK?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">9040 S C=
+omanche Rd, Tucson, AZ 85735</a><br>
+APN: 208-55-0830<br><br><a href=3D"https://us.list-manage.com/rRU8HAfL5Ug?e=
+=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" style=3D"color:r=
+gb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $59,990<br><br>
+Lot Size: 3 Acres (129,594 Sq Ft)<br>
+Property Type: Vacant Land<br><br>
+Utilities: Available<br>
+Electric: Available<br>
+Water: City Water<br>
+Septic: Septic Tank
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/390f267b-2fcd-b491-96e4-de8f9364d=
+3e1.png" width=3D"564" style=3D"max-width: 862px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><table border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-colla=
+pse:collapse"><tbody><tr><td valign=3D"top"><table align=3D"left" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" style=3D"border-collapse:collapse;f=
+loat:left"><tbody><tr><td valign=3D"top" width=3D"564"><a href=3D"https://u=
+s.list-manage.com/CdM_dJwkn6J?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8=
+b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">19160 N Alc=
+azar St, Maricopa, AZ 85138</a><br><br><a href=3D"https://us.list-manage.co=
+m/xf04fvhaX9_?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e079" s=
+tyle=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+						Price: $335,000<br><br>
+						Beds: 4<br>
+						Baths: 3<br>
+						Sq Ft: 2,417<br>
+						Lot Size: 7,417 Sq Ft<br>
+						Year Built: 2023</td></tr></tbody></table></td></tr></tbody></table><=
+/td></tr></tbody></table></td></tr></tbody></table><table border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_54207990470283849=
+74mcnDividerBlock" style=3D"min-width:100%;border-collapse:collapse;table-l=
+ayout:fixed!important"><tbody><tr><td style=3D"min-width:100%;padding:18px"=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"min-width:100%;border-top:2px solid #eaeaea;border-collapse:collapse"=
+><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/884f6607-ae4b-3b7e-fb97-34e9273b0=
+3dc.jpg" width=3D"564" style=3D"max-width: 769px; border: 0px; height: auto=
+; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974m=
+cnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/J3kngHaXhds?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">6437 E C=
+alle Bellatrix, Tucson, AZ 85710</a><br><br>
+Price: $175,000<br><br>
+Beds: 4<br>
+Baths: 2<br>
+Sq Ft: 1,600<br>
+Year Built: 1956<br><br>
+Square Footage Addition Not Reflected in Records
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/7a208864-1b9e-c839-3609-5e2d933d9=
+856.jpg" width=3D"564" style=3D"max-width: 1280px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/ht54fvhgu1i?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">10757 N =
+74th St Unit 1036, Scottsdale, AZ 85260</a><br><br><a href=3D"https://us.li=
+st-manage.com/csVwPedr9Xx?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076=
+c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br=
+><br>
+Price: $450,000<br><br>
+Beds: 2<br>
+Baths: 2<br>
+Sq Ft: 1,414<br>
+Year Built: 2007<br>
+Garage: 2-Car
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"padd=
+ing:9px"><table align=3D"left" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" class=3D"m_5420799047028384974mcnCaptionBottomContent" style=3D"bord=
+er-collapse:collapse;float:left"><tbody><tr><td align=3D"center" valign=3D"=
+top" style=3D"padding:0 9px 9px 9px"><img alt=3D"" src=3D"https://mcusercon=
+tent.com/cae766a676ce8580d3f4d2a6a/images/9eff1263-af13-f70b-ea61-5d9c8f3ad=
+a9c.jpg" width=3D"564" style=3D"max-width: 1024px; border: 0px; height: aut=
+o; outline: medium; vertical-align: bottom;" class=3D"m_5420799047028384974=
+mcnImage">
+
+
+        </td></tr><tr><td class=3D"m_5420799047028384974mcnTextContent" val=
+ign=3D"top" style=3D"padding:0px 9px;word-break:break-word;color:rgb(32,32,=
+32);font-family:Helvetica;line-height:150%" width=3D"564"><a href=3D"https:=
+//us.list-manage.com/n3OzliPbSdI?e=3D8f3e444893&amp;c2id=3De0df7a9f0a415874=
+2e8b076c5578e079" style=3D"color:rgb(0,124,137)" target=3D"_blank">10587 E =
+Palomino Rd, Scottsdale, AZ 85258</a><br><br><a href=3D"https://us.list-man=
+age.com/Ndab8sFrpjY?e=3D8f3e444893&amp;c2id=3De0df7a9f0a4158742e8b076c5578e=
+079" style=3D"color:rgb(0,124,137)" target=3D"_blank">PICTURES</a><br><br>
+Price: $945,000<br>
+ARV: $1,500,000<br><br>
+Beds: 3<br>
+Baths: 3<br>
+Sq Ft: 2,434<br>
+Lot Size: 7,986 Sq Ft<br>
+Year Built: 1985<br>
+Garage: 2.5-Car<br>
+Pool: Yes
+        </td></tr></tbody></table></td></tr></tbody></table><table border=
+=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"m_542079=
+9047028384974mcnDividerBlock" style=3D"min-width:100%;border-collapse:colla=
+pse;table-layout:fixed!important"><tbody><tr><td style=3D"min-width:100%;pa=
+dding:18px"><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" style=3D"min-width:100%;border-top:2px solid #eaeaea;border-colla=
+pse:collapse"><tbody><tr><td>
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"min-width:100%;border-collapse:collapse"><tbody><tr><td valign=3D"top=
+" style=3D"padding-top:9px"><table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;border-coll=
+apse:collapse;float:left" width=3D"100%" class=3D"m_5420799047028384974mcnT=
+extContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_5420799047028=
+384974mcnTextContent" style=3D"padding:0px 18px 9px;word-break:break-word;c=
+olor:rgb(32,32,32);font-family:Helvetica;line-height:150%"><h1 style=3D"tex=
+t-align:center;margin:0px;padding:0px;font-size:26px;line-height:125%">Whol=
+esale=C2=A0Questions? Reach out to Spencer=C2=A0480-283-4425</h1></td></tr>=
+</tbody></table></td></tr></tbody></table></td></tr><tr><td valign=3D"top" =
+id=3D"m_5420799047028384974templateFooter" style=3D"background-origin:paddi=
+ng-box;background-clip:border-box;background-image:none;background-repeat:n=
+o-repeat;background-position:center center;background-size:cover;border-top=
+:0px;border-bottom:0px;padding-top:9px;padding-bottom:9px"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"min-width:1=
+00%;border-collapse:collapse"><tbody><tr><td valign=3D"top" style=3D"paddin=
+g:9px"><table align=3D"left" width=3D"100%" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" style=3D"min-width:100%;border-collapse:collapse;float:le=
+ft"><tbody><tr><td valign=3D"top" style=3D"padding-right:9px;padding-left:9=
+px;padding-top:0;padding-bottom:0;text-align:center"><img align=3D"center" =
+alt=3D"" src=3D"https://gallery.mailchimp.com/cae766a676ce8580d3f4d2a6a/ima=
+ges/4575ce25-e74b-48f1-9539-45b89a1fd362.jpg" width=3D"100" style=3D"max-wi=
+dth: 100px; padding-bottom: 0px; vertical-align: bottom; border: 0px; heigh=
+t: auto; outline: medium; display: inline !important;" class=3D"m_542079904=
+7028384974mcnImage">
+
+
+                            </td></tr></tbody></table></td></tr></tbody></t=
+able><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%"=
+ style=3D"min-width:100%;border-collapse:collapse"><tbody><tr><td valign=3D=
+"top" style=3D"padding-top:9px"><table align=3D"left" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;border-c=
+ollapse:collapse;float:left" width=3D"100%" class=3D"m_5420799047028384974m=
+cnTextContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_5420799047=
+028384974mcnTextContent" style=3D"padding-top:0;padding-right:18px;padding-=
+bottom:9px;padding-left:18px;word-break:break-word;color:#656565;font-famil=
+y:Helvetica;font-size:12px;line-height:150%;text-align:center"><em>Copyrigh=
+t =C2=A9 2016 Gentry Real Estate, All rights reserved.</em><br><br><br><str=
+ong>Our mailing address is:</strong><br>
+Gentry Real Estate=C2=A0<br><a href=3D"https://www.google.com/maps/search/3=
+303+E.+Baseline+Rd+%23119,+%0D%0AGilbert+AZ+85234?entry=3Dgmail&amp;source=
+=3Dg">3303 E. Baseline</a>=C2=A0<a href=3D"https://www.google.com/maps/sear=
+ch/3303+E.+Baseline+Rd+%23119,+%0D%0AGilbert+AZ+85234?entry=3Dgmail&amp;sou=
+rce=3Dg">Rd #119,</a><br><a href=3D"https://www.google.com/maps/search/3303=
++E.+Baseline+Rd+%23119,+%0D%0AGilbert+AZ+85234?entry=3Dgmail&amp;source=3Dg=
+">
+Gilbert AZ 85234</a><br><br>
+480-283-4425<br><br>
+Want to change how you receive these emails?<br>
+You can <a href=3D"https://gentryrealestategroup.us8.list-manage.com/profil=
+e?u=3Dcae766a676ce8580d3f4d2a6a&amp;id=3Dbc4c104c01&amp;e=3D8f3e444893&amp;=
+c=3Dcaa779f282" style=3D"color:rgb(101,101,101)" target=3D"_blank">update y=
+our preferences</a> or <a href=3D"https://gentryrealestategroup.us8.list-ma=
+nage.com/unsubscribe?u=3Dcae766a676ce8580d3f4d2a6a&amp;id=3Dbc4c104c01&amp;=
+t=3Db&amp;e=3D8f3e444893&amp;c=3Dcaa779f282" style=3D"color:rgb(101,101,101=
+)" target=3D"_blank">unsubscribe from this list</a><br><br>
+=C2=A0
+                        </td></tr></tbody></table></td></tr></tbody></table=
+><table border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" sty=
+le=3D"min-width:100%;border-collapse:collapse"><tbody><tr><td valign=3D"top=
+" style=3D"padding-top:9px"><table align=3D"left" border=3D"0" cellpadding=
+=3D"0" cellspacing=3D"0" style=3D"max-width:100%;min-width:100%;border-coll=
+apse:collapse;float:left" width=3D"100%" class=3D"m_5420799047028384974mcnT=
+extContentContainer"><tbody><tr><td valign=3D"top" class=3D"m_5420799047028=
+384974mcnTextContent" style=3D"padding-top:0;padding-right:18px;padding-bot=
+tom:9px;padding-left:18px;word-break:break-word;color:#656565;font-family:H=
+elvetica;font-size:12px;line-height:150%;text-align:center">
+
+                            DISCLAIMER<br><br>
+Gentry Real Estate respectfully notifies its customers, subscribers and the=
+ general readership of this ad that the accuracy of the information provide=
+d herein is not guaranteed by Gentry Real Estate.=C2=A0 Gentry Real Estate =
+diligently researches the information set forth herein, but often relies on=
+ outside sources to provide the information.=C2=A0 The information is subje=
+ct to error and, accordingly, the readers should rely upon their own invest=
+igation and due diligence prior to making any purchase or contract relative=
+ to the property advertised herein. =C2=A0<br><br>
+Based on the foregoing, Gentry Real Estate disclaims any liability for reli=
+ance upon the information contained herein. =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=
+=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0 =C2=A0=C2=A0</td></tr></tbody=
+></table></td></tr></tbody></table></td></tr></tbody></table></td></tr></tb=
+ody></table></div></div></div></div></div></div></div>
+
+--000000000000872129065b7578d8--

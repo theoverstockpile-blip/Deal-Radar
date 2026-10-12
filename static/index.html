@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Deal Radar</title>
+<meta name="theme-color" content="#17694a">
+<meta name="description" content="Daily wholesale deal alerts ranked by cost per square foot.">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="icon" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Deal Radar">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div id="app">
+  <header class="top"><h1 id="title">Deal Radar</h1><span class="sub" id="sub"></span></header>
+  <main id="view" aria-live="polite"></main>
+  <div class="demo" id="demo-note" hidden>Interactive prototype with sample data from a real wholesale email.</div>
+</div>
+<div class="tabs" id="tabs"></div>
+<script src="/app.js"></script>
+</body>
+</html>
